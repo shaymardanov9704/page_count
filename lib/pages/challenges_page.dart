@@ -46,6 +46,7 @@ class _ChallengesPageState extends State<ChallengesPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        const SizedBox(height: 10),
                         Text(e.name),
                         Row(
                           children: [
