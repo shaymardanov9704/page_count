@@ -1,5 +1,5 @@
 import 'package:hive/hive.dart';
-import 'page_model.dart';
+import '../app/data/models/page_model.dart';
 
 part 'challenge_model.g.dart';
 

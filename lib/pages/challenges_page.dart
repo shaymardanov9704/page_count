@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:page_counter/models/page_model.dart';
+import 'package:page_counter/app/data/models/page_model.dart';
 
 class ChallengesPage extends StatefulWidget {
   const ChallengesPage({super.key});
@@ -20,7 +20,7 @@ class _ChallengesPageState extends State<ChallengesPage> {
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(16),
-        itemCount: 5,
+        itemCount: 1,
         itemBuilder: (_, i) => Container(
           margin: const EdgeInsets.only(bottom: 16),
           decoration: BoxDecoration(
@@ -37,7 +37,8 @@ class _ChallengesPageState extends State<ChallengesPage> {
                 .map(
                   (e) => Container(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
-                    margin: const EdgeInsets.symmetric(horizontal: 12,vertical: 6),
+                    margin:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white,
@@ -79,6 +80,10 @@ class _ChallengesPageState extends State<ChallengesPage> {
                 .toList(),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }
